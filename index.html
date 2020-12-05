@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="/mobile.css">
+  <title>Crypto Converter</title>
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <button class="btn holdings-btn" id="holdings-btn">Show Holdings</button>
+      <h1>Cryptocurrency Converter</h1>
+    </nav>
+  </div>
+
+  <div class="holdings-section" id="holdings-section">
+    <h1>Crypto Holdings</h1>
+    <div class="input-box" id="input-box">
+      <button class="btn close-btn" id="close-btn">Close</button>
+        <br>
+        <label for="input">Crypto & Holding Amount</label>
+        <input id="crypto-tag" class="crypto" type="text" placeholder="Enter Your Crypto & Amount">
+        <br>
+        <button class="btn add-btn" id="add-btn">Add Crypto</button>
+        <p class="warning-text">Please enter an ID & Amount</p>
+    </div>
+    <div id="form" class="form">
+      <div class="holdings" id="holdings">
+        <h2>Holdings</h2>
+        <ul id="collection" class="collection"></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-image-container">
+      <img class="img-one" src="/img/Bitcoin-Logo-700x394.png" alt="bitcoin">
+      <img class="img-two" src="/img/ethereum.png" alt="ethereum">
+  </div>
+  <p>Enter the Crypto Amount To See the Current Crypto Currency Prices & How Much your Individual Currency Holdings Are Worth.</p>
+
+  <section id="converter" class="converter">
+      <div class="currency-one-container">
+        <select class="currency-one" id="currency-one">
+          <option value="bitcoin" selected>BTC</option>
+          <option value="ethereum">ETH</option>
+          <option value="ripple">XRP</option>
+          <option value="litecoin">LTC</option>
+          <option value="stellar">XLM</option>
+          <option value="tron">TRX</option>
+          <option value="chainlink">LINK</option>
+          <option value="dai">DAI</option>
+          <option value="eos">EOS</option>
+          <option value="maker">MKR</option>
+          <option value="tezos">XTZ</option>
+          <option value="uniswap">UNI</option>
+          <option value="cosmos">ATOM</option>
+          <option value="augur">REP</option>
+          <option value="neo">NEO</option>
+          <option value="dash">DASH</option>
+          <option value="tether">USDT</option>
+          <option value="polkadot">DOT</option>
+          <option value="monero">XMR</option>
+          <option value="aave">AAVE</option>
+          <option value="waves">WAVES</option>
+          <option value="zcash">ZEC</option>
+        </select>
+        <input type="number" id="amount-one" placeholder="0">
+      </div>
+      <button id="btn" class="btn refresh-btn">Refresh Price</button>
+      <div class="currency-two-container">
+        <select id="currency-two">
+          <option value="GBP" selected>GBP</option>
+          <option value="USD">USD</option>
+        </select>
+        <input type="number" id="amount-two" placeholder="0">
+      </div>
+  </section>
+
+  <section id="info" class="info">
+      <div id="info-container" class="info-container"></div>
+  </section>
+
+  <script src="/crypto.js"></script>
+</body>
+</html>
