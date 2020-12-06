@@ -4,6 +4,10 @@ Cryptocurrency converter built with HTML / CSS & Vanilla Javascript. Gathers dat
 
 Also has a Crypto holdings section which you can input the Crypto you have as well as the amount you hold. This is then stored in local storage for future reference. Each Crypto entered in the holdings can be removed.
 
+Live site on [Netlify] (https://focused-ritchie-7e9c2f.netlify.app/)
+
+
+
 # More Info
 
 
